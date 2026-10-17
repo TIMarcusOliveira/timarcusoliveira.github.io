@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfólio de Marcus Vinicius, desenvolvedor em formacao, com foco em desenvolvimento back-end, APIs e bancos de dados."
+    />
+    <title>Portifolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="Marcus Vinicius — início">
+        <span class="brand-mark">M</span>
+        <span> Marcus Vinicius</span>
+      </a>
+      <nav class="main-nav" aria-label="Navegação principal">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#curriculo">Currículo</a>
+
+        <a class="nav-contact" href="#contato"> Contato </a>
+      </nav>
+    </header>
+
+    <main class="section-shell">
+      <section class="hero" id="inicio">
+        <p class="eyebrow">Desenvolvedor em Formação</p>
+        <h1>Construindo <span>soluções </span> com <span>código</span>.</h1>
+        <p class="hero-description">
+          Estudante de Análise e Desenvolvimento de Sistemas, com foco em
+          desenvolvimento back-end, APIs e bancos de dados.
+        </p>
+        <a class="button button-primary" href="#projetos">
+          Conheça meus projetos
+        </a>
+      </section>
+
+      <section class="about" id="sobre">
+        <div class="resume-card" id="curriculo">
+          <div class="resume-card-copy">
+            <p class="eyebrow">Currículo profissional</p>
+            <h2>Conheça minha trajetória</h2>
+            <p>
+              Confira minha formação, experiências e habilidades em
+              desenvolvimento.
+            </p>
+          </div>
+          <div class="resume-actions">
+            <a
+              class="resume-button resume-button-primary"
+              href="../assets/cv_marcus_oliveira.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ver currículo <span aria-hidden="true">↗</span>
+            </a>
+            <a
+              class="resume-button resume-button-secondary"
+              href="../assets/cv_marcus_oliveira.pdf"
+              download
+            >
+              Baixar PDF <span aria-hidden="true">↓</span>
+            </a>
+          </div>
+        </div>
+        <h2>Formação</h2>
+        <section class="formacao">
+          <p>
+            Análise e Desenvolvimento de Sistemas – Cursando (2º semestre)
+            <br />
+            FATEC de Mogi das Cruzes – Centro Paula Souza | Início Fev/2026
+          </p>
+          <p>
+            Ensino Médio Integrado ao Técnico em Informática para Internet
+            <br />
+            ETEC de Santa Isabel – Centro Paula Souza | Fev/2023 – Dez/2025
+          </p>
+        </section>
+      </section>
+
+      <section class="projects" id="projetos">
+        <h2>Projetos selecionados</h2>
+        <ul class="project-list">
+          <li>
+            <a id="abrirFit">
+              Projeto acadêmico - FITWARE - sistema de gerenciamento de
+              academias
+              <span aria-hidden="true"> ↗ </span>
+            </a>
+          </li>
+          <li>
+            <a id="abrirLib">
+              Projeto acadêmico - GAMELIB - biblioteca de jogos
+              <span aria-hidden="true"> ↗ </span>
+            </a>
+          </li>
+        </ul>
+
+        <dialog class="modal" id="fitware">
+          <div class="modal-heading">
+            <h2>Fitware - Projeto academico - TCC</h2>
+            <a
+              class="repo-button"
+              href="https://github.com/FelipeEvangelistaNeves/TCC-FITWARE"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Repositório no GitHub <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+          <p>
+            O FITWARE é uma aplicação web desenvolvida para centralizar a gestão
+            de alunos, professores, treinos e pagamentos em academias, reunindo
+            funcionalidades administrativas em uma única plataforma.
+          </p>
+          <section
+            class="modal-section project-gallery"
+            aria-labelledby="gallery-title"
+          >
+            <div class="modal-section-heading">
+              <h3 id="gallery-title">Imagens do projeto</h3>
+              <span>Galeria</span>
+            </div>
+            <div class="gallery-grid">
+              <figure class="gallery-slot gallery-slot-featured">
+                <button
+                  class="gallery-image-button"
+                  type="button"
+                  aria-label="Ampliar imagem: página inicial do FitWare"
+                >
+                  <span class="gallery-image-frame">
+                    <img
+                      src="../assets/img/fitware/home.png"
+                      alt="Página inicial do FitWare com navegação, apresentação do sistema e opções para conhecer planos e demonstração."
+                    />
+                  </span>
+                </button>
+                <figcaption>
+                  Página inicial do FitWare, com apresentação do sistema, planos
+                  e acesso à demonstração.
+                </figcaption>
+              </figure>
+              <figure class="gallery-slot">
+                <button
+                  class="gallery-image-button"
+                  type="button"
+                  aria-label="Ampliar imagem: tela de resgate de pontos"
+                >
+                  <span class="gallery-image-frame">
+                    <img
+                      src="../assets/img/fitware/AlunoResgate.png"
+                      alt="Tela de resgate de pontos com saldo do aluno e opções de recompensas disponíveis."
+                    />
+                  </span>
+                </button>
+                <figcaption>
+                  Resgate de pontos: saldo do aluno e catálogo de recompensas,
+                  como roupas e acessórios de treino.
+                </figcaption>
+              </figure>
+              <figure class="gallery-slot">
+                <button
+                  class="gallery-image-button"
+                  type="button"
+                  aria-label="Ampliar imagem: painel do aluno"
+                >
+                  <span class="gallery-image-frame">
+                    <img
+                      src="../assets/img/fitware/telaAluno.png"
+                      alt="Painel do aluno com resumo de treinos concluídos, desafios ativos e um treino funcional."
+                    />
+                  </span>
+                </button>
+                <figcaption>
+                  Painel do aluno com progresso dos treinos, desafios ativos e
+                  detalhes de um treino funcional.
+                </figcaption>
+              </figure>
+            </div>
+          </section>
+          <section class="modal-section" id="technology">
+            <h3>Tecnologias utilizadas</h3>
+            <div class="tech-groups">
+              <div class="tech-group">
+                <h4>Backend e dados</h4>
+                <ul class="tech-list">
+                  <li>Node.js</li>
+                  <li>Express</li>
+                  <li>Sequelize</li>
+                  <li>PostgreSQL</li>
+                  <li>JWT</li>
+                </ul>
+              </div>
+
+              <div class="tech-group">
+                <h4>Frontend</h4>
+                <ul class="tech-list">
+                  <li>React</li>
+                  <li>JavaScript</li>
+                  <li>SCSS</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section class="modal-section" id="contribution">
+            <h3>Minha contribuição no projeto</h3>
+            <p>
+              Atuei principalmente no desenvolvimento e na integração do backend
+              do FITWARE, com foco no sistema de pontuação dos alunos,
+              persistência de dados, autenticação e segurança.
+            </p>
+            <ul class="contribution-list">
+              <li>
+                <h4>Modelagem e integração com o banco de dados</h4>
+                <p>
+                  criação e mapeamento dos models a partir do esquema
+                  relacional, além da integração e dos ajustes necessários para
+                  garantir a comunicação entre a aplicação e o PostgreSQL.
+                </p>
+              </li>
+              <li>
+                <h4>Autenticação e controle de permissões</h4>
+                <p>
+                  implementação da verificação de autenticação utilizando JWT e
+                  controle de permissões baseado em roles, protegendo rotas e
+                  restringindo operações conforme o perfil do usuário.
+                </p>
+              </li>
+              <li>
+                <h4>Sistema de pontos</h4>
+                <p>
+                  desenvolvimento do sistema de pontos, resgates de recompensas
+                  e desafios, incluindo a lógica de cálculo de pontos, regras de
+                  resgate e integração com o banco de dados.
+                </p>
+              </li>
+              <li>
+                <h4>Sistema de notificações</h4>
+                <p>
+                  desenvolvimento de alertas e avisos para informar os usuários
+                  sobre eventos e atualizações relevantes do sistema.
+                </p>
+              </li>
+            </ul>
+          </section>
+
+          <section class="modal-section" id="authors">
+            <h3>Autores</h3>
+            <ul class="author-list">
+              <li>Anthony L. Dias - Banco e Backend</li>
+              <li>Ermyone V. S. Santos - Documentação</li>
+              <li>Felipe E. Neves - Frontend</li>
+              <li>Filipe M. Silva - Banco e Frontend</li>
+              <li>Marcus V. P. Oliveira - Backend e auxílio geral</li>
+              <li>Thiago W. A. Lima - Frontend</li>
+              <li>Samyra H. Freitas - Documentação</li>
+            </ul>
+          </section>
+
+          <div class="modal-footer">
+            <a class="modal-doc-link" href="#">
+              Acesse a documentação do projeto <span aria-hidden="true">↗</span>
+            </a>
+            <button class="fecharModal" type="button">Fechar</button>
+          </div>
+        </dialog>
+
+        <dialog
+          class="modal image-viewer"
+          id="imageViewer"
+          aria-labelledby="imageViewerTitle"
+        >
+          <div class="image-viewer-heading">
+            <h2 id="imageViewerTitle">Imagem ampliada</h2>
+            <button class="fecharModal" type="button">Fechar</button>
+          </div>
+          <figure>
+            <img id="imageViewerImage" src="" alt="" />
+            <figcaption id="imageViewerCaption"></figcaption>
+          </figure>
+        </dialog>
+
+        <dialog class="modal" id="gamelib">
+          <div class="modal-heading">
+            <h2>GameLib - Projeto acadêmico - Biblioteca de jogos</h2>
+            <a
+              class="repo-button"
+              href="https://github.com/TIMarcusOliveira/Biblioteca_Jogos_CRUD"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Repositório no GitHub <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+          <p>
+            O GameLib é uma plataforma desenvolvida para organizar uma
+            biblioteca pessoal de jogos, permitindo que os usuários acompanhem
+            títulos, cataloguem novos favoritos e acessem informações relevantes
+            de forma simples e intuitiva.
+          </p>
+          <section
+            class="modal-section project-gallery"
+            aria-labelledby="gamelib-gallery-title"
+          >
+            <div class="modal-section-heading">
+              <h3 id="gamelib-gallery-title">Imagens do projeto</h3>
+              <span>Galeria</span>
+            </div>
+            <div class="gallery-grid">
+              <figure class="gallery-slot gallery-slot-featured">
+                <button
+                  class="gallery-image-button"
+                  type="button"
+                  aria-label="Ampliar imagem: página inicial do GameLib"
+                >
+                  <span class="gallery-image-frame">
+                    <img
+                      src="../assets/img/gamelib/homePage.png"
+                      alt="Página inicial do GameLib com destaque para catálogo e navegação de jogos."
+                    />
+                  </span>
+                </button>
+                <figcaption>
+                  Página inicial do GameLib com apresentação dos funcionamentos
+                  do sistema.
+                </figcaption>
+              </figure>
+              <figure class="gallery-slot">
+                <button
+                  class="gallery-image-button"
+                  type="button"
+                  aria-label="Ampliar imagem: biblioteca do GameLib"
+                >
+                  <span class="gallery-image-frame">
+                    <img
+                      src="../assets/img/gamelib/library.png"
+                      alt="Tela da biblioteca de jogos organizada por categorias e favoritos."
+                    />
+                  </span>
+                </button>
+                <figcaption>
+                  Biblioteca com organização dos jogos, facilitando a
+                  visualização do acervo pessoal.
+                </figcaption>
+              </figure>
+              <figure class="gallery-slot">
+                <button
+                  class="gallery-image-button"
+                  type="button"
+                  aria-label="Ampliar imagem: página de usuário do GameLib"
+                >
+                  <span class="gallery-image-frame">
+                    <img
+                      src="../assets/img/gamelib/userHome.png"
+                      alt="Página do usuário com informações pessoais, jogos favoritos e perfil."
+                    />
+                  </span>
+                </button>
+                <figcaption>
+                  Home do usuário com opções de visualizar a biblioteca,
+                  adicionar, editar ou deletar jogos
+                </figcaption>
+              </figure>
+            </div>
+          </section>
+          <section class="modal-section" id="technology-gamelib">
+            <h3>Tecnologias utilizadas</h3>
+            <div class="tech-groups">
+              <div class="tech-group">
+                <h4>Linguagens</h4>
+                <ul class="tech-list">
+                  <li>PHP</li>
+                  <li>MySQL / MariaDB</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section class="modal-section" id="authors-gamelib">
+            <h3>Autores - projeto individual</h3>
+            <ul class="author-list">
+              <li>Marcus V. P. Oliveira</li>
+            </ul>
+          </section>
+
+          <div class="modal-footer">
+            <button class="fecharModal" type="button">Fechar</button>
+          </div>
+        </dialog>
+      </section>
+
+      <section class="contact" id="contato">
+        <div>
+          <h2>Contato</h2>
+          <p>email: marcus.profissional.dev@gmail.com</p>
+          <p>Telefone: (11) 9 3536-6977</p>
+        </div>
+        <a class="text-link" href="mailto:marcus.profissional.dev@gmail.com">
+          Enviar um e-mail <span aria-hidden="true"> ↗ </span>
+        </a>
+      </section>
+    </main>
+
+    <footer class="site-footer section-shell">
+      <p>Marcus Vinicius · Desenvolvedor em Formação</p>
+      <a class="back-to-top" href="#inicio">Voltar ao início ↑</a>
+    </footer>
+
+    <script>
+      let fitware = document.getElementById("fitware");
+      let gamelib = document.getElementById("gamelib");
+      let imageViewer = document.getElementById("imageViewer");
+      let imageViewerImage = document.getElementById("imageViewerImage");
+      let imageViewerCaption = document.getElementById("imageViewerCaption");
+      let abrirFit = document.getElementById("abrirFit");
+      let abrirLib = document.getElementById("abrirLib");
+
+      abrirFit.addEventListener("click", () => {
+        fitware.showModal();
+      });
+
+      abrirLib.addEventListener("click", () => {
+        gamelib.showModal();
+      });
+
+      document.addEventListener("click", (event) => {
+        const botaoImagem = event.target.closest(".gallery-image-button");
+
+        if (!botaoImagem) {
+          return;
+        }
+
+        const imagem = botaoImagem.querySelector("img");
+        const legenda = botaoImagem
+          .closest("figure")
+          .querySelector("figcaption");
+
+        imageViewerImage.src = imagem.src;
+        imageViewerImage.alt = imagem.alt;
+        imageViewerCaption.textContent = legenda.textContent.trim();
+        imageViewer.showModal();
+      });
+
+      document.addEventListener("click", (event) => {
+        const botaoFechar = event.target.closest("button.fecharModal");
+        const modal = botaoFechar?.closest("dialog");
+
+        if (modal?.open) {
+          modal.close();
+        }
+      });
+
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && imageViewer.open) {
+          imageViewer.close();
+        }
+      });
+    </script>
+  </body>
+</html>
